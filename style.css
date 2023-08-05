@@ -106,8 +106,26 @@ html , body {
     color: white;
     background-color : #0a3cce;
     position: relative;
+    padding: 0 9vw;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
 
-    & #page2-inner {
+    & p {
+        margin-bottom: 3vw;
+        font-weight: 400;
+    }
+
+    & h1 {
+        font-weight: 300;
+        line-height: 1.2;
+        width: 100%;
+        font-size: 55px;
+        color: rgba(255, 255, 255, 0.158);
+    }
+
+    /* & #page2-inner {
         padding: 80px 120px;
         width: 100%;
 
@@ -122,6 +140,6 @@ html , body {
             margin-bottom: 30px;
             font-weight: 400;
         }
-    }
+    } */
 
 }
