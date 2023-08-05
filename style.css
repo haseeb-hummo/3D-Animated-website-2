@@ -103,5 +103,25 @@ html , body {
 #page2 {
     height: 100vh;
     width: 100vw;
-    color : green;
+    color: white;
+    background-color : #0a3cce;
+    position: relative;
+
+    & #page2-inner {
+        padding: 80px 120px;
+        width: 100%;
+
+        & h1 {
+            font-size: 55px;
+            font-weight: 300;
+            line-height: 1.2;
+            color: rgba(255, 255, 255, 0.158);
+        }
+
+        & p {
+            margin-bottom: 30px;
+            font-weight: 400;
+        }
+    }
+
 }

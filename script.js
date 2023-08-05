@@ -1,4 +1,5 @@
-gsap.registerPlugin(ScrollTrigger);
+function loco(){
+  gsap.registerPlugin(ScrollTrigger);
 
 // Using Locomotive Scroll from Locomotive https://github.com/locomotivemtl/locomotive-scroll
 
@@ -26,3 +27,28 @@ ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 
 // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
 ScrollTrigger.refresh();
+
+}
+loco()
+
+let clutter = "";
+
+document.querySelector("#page2-inner>h1").textContent.split(" ").forEach( function (dets) {
+  clutter += `<span> ${dets} </span>`
+  document.querySelector("#page2-inner>h1").innerHTML = clutter;
+})
+
+gsap.to("#page2-inner>h1>span" , {
+  scrollTrigger : {
+    trigger : "#page2-inner>h1>span",
+    start : "top bottom",
+    end : "bottom top",
+    scroller : "#main",
+    scrub : .5,
+    markers : true
+  },
+  stagger : .2,
+  color : "#fff"
+})
+
+
