@@ -426,8 +426,24 @@ canvas1()
 
 
 
+let clutterForPage6 = "";
 
+document.querySelector("#page6>h1").textContent.split(" ").forEach(function (dets) {
+  clutterForPage6 += `<span> ${dets} </span>`
+  document.querySelector("#page6>h1").innerHTML = clutterForPage6;
+})
 
+gsap.to("#page6>h1>span", {
+    scrollTrigger: {
+        trigger: "#page6>h1>span",
+    start: "top bottom",
+    end: "bottom 50%",
+    scroller: "#main",
+    scrub: .5
+  },
+  stagger: .2,
+  color: "#fff"
+});
 
 
 
