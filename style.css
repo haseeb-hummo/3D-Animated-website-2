@@ -133,6 +133,21 @@ a separate class and apply that class to both #page2 and #page4 elements. */
     }
 }
 
+/* #page3 , #page5 , #page7 Style => canvasStyles class*/
+
+.canvasStyles {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #0a3cce;
+    
+    & canvas {
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+    }
+}
+
 #page5 {
     height: 100vh;
     width: 100vw;
@@ -140,24 +155,10 @@ a separate class and apply that class to both #page2 and #page4 elements. */
     background-color: #0a3cce;
     
     & canvas {
-        height: 100vh;
-        width: 100vw;
+        max-height: 100vh;
+        max-width: 100vw;
         position: relative;
     }
 }
 
 
-/* #page3 , #page5 Style => canvasStyles class*/
-
-.canvasStyles {
-    height: 100vh;
-    width: 100vw;
-    position: relative;
-    background-color: #0a3cce;
-    
-    & canvas {
-        height: 100vh;
-        width: 100vw;
-        position: relative;
-    }
-}
