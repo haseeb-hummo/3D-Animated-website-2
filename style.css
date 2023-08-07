@@ -299,7 +299,63 @@ a separate class and apply that class to both #page2 and #page4 elements. */
             font-size: 22px;
             left: 2%;
             width: 86%;
-            color : rgba(255,255,255,.6)
+            color: rgba(255, 255, 255, .6)
         }
     }
+}
+
+#page11 {
+    height: 110vh;
+    width: 100vw;
+    background-color: white;
+    position: relative;
+
+    & h1 {
+        position: absolute;
+        top : 20%;
+        left : 10%;
+        font-size : 85px;
+        font-weight: 300;
+    }
+
+    & .page11-inner {
+        display: flex;
+        position: relative;
+        height: 30%;
+        width: 100%;
+        top: 50%;
+
+        & .imgSection {
+            position: relative;
+            width: 50%;
+            display: flex;
+            left: 10%;
+
+            & img {
+                width: 75%;
+                height: 90%;
+                object-fit: cover;
+                border-radius : 10px;
+            }
+        }
+        
+        & .imgInfo {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 50%;
+            gap: 10px;
+
+            & p {
+                font-weight: 300;
+            }
+
+            & h3 {
+                font-size: 20px;
+                font-weight: 400;
+            }
+        }
+    }
+
 }
