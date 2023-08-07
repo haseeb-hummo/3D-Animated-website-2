@@ -359,3 +359,9 @@ a separate class and apply that class to both #page2 and #page4 elements. */
     }
 
 }
+
+#page11Height {
+    height: 55vh;
+    width: 100vw;
+    background-color: white;
+}
