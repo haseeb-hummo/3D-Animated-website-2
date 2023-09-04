@@ -1,2 +1,2 @@
-# Animated-website-2
+# Magma website clone
 https://magma-clone.netlify.app/
